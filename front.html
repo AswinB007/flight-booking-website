@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>www.travelmate.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="front.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body>  
+      <div id="spinner" class="spinner-border text-primary"></div> <!-- Spinner border element -->
+           <!-- Navbar -->
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <!-- Logo and Name -->
+                    <a class="navbar-brand" href="#">
+                      <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                      <b>TravelMate</b>
+                    </a>
+                    
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Login/Signup Links -->
+                        <ul class="navbar-nav left-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html" id="signup">Signup</a>
+                            </li>
+                        </ul>
+
+                      
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Visa
+                              </a>
+                              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="https://indianvisaonline.gov.in/evisa/tvoa.html">E Visa</a></li>
+                                  <li><a class="dropdown-item" href="https://indianvisaonline.gov.in/visa/visa-on-arrival.html#:~:text='Visa%2Don%2DArrival',valid%20up%20to%2060%20days.">Arriving Visa</a></li>
+                                  <li><a class="dropdown-item" href="https://www.mha.gov.in/sites/default/files/2022-08/work_visa_faq%5B1%5D.pdf">Work Visa</a></li>
+                                  <li><a class="dropdown-item" href="https://www.indiainnewyork.gov.in/pages?id=NENWRERtL3JnYVZkS2l6NVlTazN3dz09&subid=MUxURkNBKzFHSXJHMDZMMkZDaFByQT09&nextid=MUxURkNBKzFHSXJHMDZMMkZDaFByQT09&nextnextid=d1hqcVZKaWN1ZEowWE5rb2VCWDFCdz09">Student Visa</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Group Booking</a></li>
+                                <li><a class="dropdown-item" href="https://www.makemytrip.com/holidays-india/">Plan</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item">
+                              <a id="offersLink" class="nav-link" href="#">Book tickets</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://www.zendesk.com/in/blog/customer-service-skills/#georedirect">Customer Service</a>
+                          </li>
+                      </ul>
+
+                       <form class="d-flex">
+                          <input class="form-control me-4" type="text" placeholder="search">
+                          <button class="btn btn-success" type="button">search</button>
+
+                        </form>
+                    </div>
+                </div>
+              </nav>
+
+
+          
+ 
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                 
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                </div>
+                
+                  
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="planes" src="singapore.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>Singapore Airlines</h3>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="planes"  src="airindia.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>Air India</h3> 
+                    </div> 
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="planes" src="qatar.jpg" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>Qatar Airways</h3>
+                    </div>  
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="planes"  src="emirates.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>Emirates Airlines</h3>
+                    </div> 
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="planes"  src="etihad.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>Ethihad Airways</h3>
+                    </div> 
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="planes"  src="indigo.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                      <h3>indigo</h3>
+                    </div> 
+                  </div>
+                
+                </div>  
+             
+            </div>    
+              <!-- Inside the existing new-div -->
+        <div id="bookingContainer" style="display: none; " >
+        
+
+        <!-- Transparent div for search form -->
+          <div id="search-form-container">
+            <button id="exit-mark" onclick="closeForm()"><b>X</b></button>
+            <h2>Book your Flights</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <select class="form-select" required>
+                      <option value="">Choose Origin</option>
+                      <option value="DEL">Indira Gandhi International Airport (DEL) - New Delhi</option>
+                      <option value="BOM">Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai</option>
+                      <option value="BLR">Kempegowda International Airport (BLR) - Bengaluru</option>
+                      <option value="MAA">Chennai International Airport - Chennai</option>
+                      <option value="CCU">Netaji Subhas Chandra Bose International Airport - Kolkata </option>
+                      <option value="HYD">Rajiv Gandhi International Airport - Hyderabad </option>
+                      <option value="COK">Cochin International Airport - Kochi </option>
+                      <option value="PNQ">Pune Airport - Pune</option>
+                      <option value="GOI">Goa International Airport - Goa</option>
+                      <option value="AMD">Ahmedabad International Airport - Ahmedabad </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <select class="form-select" required>
+
+                      <option value="">Choose Destination</option>
+                      <option value="DEL">Indira Gandhi International Airport (DEL) - New Delhi</option>
+                      <option value="BOM">Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai</option>
+                      <option value="BLR">Kempegowda International Airport (BLR) - Bengaluru</option>
+                      <option value="MAA">Chennai International Airport - Chennai</option>
+                      <option value="CCU">Netaji Subhas Chandra Bose International Airport - Kolkata </option>
+                      <option value="HYD">Rajiv Gandhi International Airport - Hyderabad </option>
+                      <option value="COK">Cochin International Airport - Kochi </option>
+                      <option value="PNQ">Pune Airport - Pune</option>
+                      <option value="GOI">Goa International Airport - Goa</option>
+                      <option value="AMD">Ahmedabad International Airport - Ahmedabad </option>
+                  </select>
+                </div>
+                
+
+                <div class="form-group">
+                  <label for="date">Departure Date:</label>
+                  <input type="date" class="form-control" id="departure-date" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="date">Return Date:</label>
+                    <input type="date" class="form-control" id="return-date" required>
+                </div>
+
+                <label id="id1" ><b>Enter the Passengers</b></label>
+
+                <div class="form-group">
+                  <label for="Classes">Class:</label>
+                    <select class="form-select" required>
+                      <option value="">Choose Class </option>
+                      <option value="">First Class</option>
+                      <option value="">Business Class</option>
+                      <option value="">Premium Economy</option>
+                      <option value="">Economy</option>
+                    </select>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-4">
+                    <label for="infants" class="col-form-label">Infants:</label>
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="infants" value="0">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-4">
+                    <label for="children" class="col-form-label">Children:</label>
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="children" value="0">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-4">
+                    <label for="adults" class="col-form-label">Adults:</label>
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="adults" value="0">
+                  </div>
+                </div>
+                
+              
+              
+              
+              <!-- <button type="submit" class="btn btn-primary bton">Book Now</button> -->
+                  
+
+            </form>
+            
+          </div>
+
+        </div>
+
+        <div id="track" style="background-color: rgb(72, 116, 137);">
+         
+          <img id="trackimg" src="track.jpg" alt="plane track">
+          <p id="p1">Track your Flight Now !!!</p>
+          <a href="https://www.flightradar24.com/51.50,-0.12/6"><button id="b1"> <b>Track your flight here</b>  </button></a>
+
+        </div>
+
+        
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col popular-flight-roots" onclick="changeColorAndShowContent(this, 'popular-flight-roots-content')">
+                      Popular Flight Roots
+                  </div>
+                  <div class="col top-flight-roots" onclick="changeColorAndShowContent(this, 'top-flight-roots-content')">
+                      Top Flight Roots
+                  </div>
+                  <div class="col trending-flight-roots" onclick="changeColorAndShowContent(this, 'trending-flight-roots-content')">
+                      Trending Flight Roots
+                  </div>
+                  <div class="col airlines" onclick="changeColorAndShowContent(this, 'airlines-content')">
+                      Airlines
+                  </div>
+                  <div class="col popular-airline-routes" onclick="changeColorAndShowContent(this, 'popular-airline-routes-content')">
+                      Popular Airline Routes
+                  </div>
+                  <div class="col info" onclick="changeColorAndShowContent(this, 'info-content')">
+                      About
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div id="popular-flight-roots-content" class="section-content" style="display: none;">
+                          <h2>Popular Flight Roots</h2>
+                          <ul class="flight-list" >
+                              <li>Delhi To Kolkata Flights</li>
+                              <li>Delhi To Hyderabad Flights</li>
+                              <li>Hyderabad To Ayodhya Flights</li>
+                              <li>Delhi To Ahmedabad Flights</li>
+                              <li>Bengaluru To Kolkata Flights</li>
+                          </ul>
+                            <ul class="flight-list" >
+                              <li>Delhi To Dharmsala Flights</li>
+                              <li>Surat To Ayodhya Flights</li>
+                              <li>Chennai To Coimbatore Flights</li>
+                              <li>Mumbai To Ayodhya Flights</li>
+                              <li>Delhi To Patna Flights</li>
+                          </ul>
+                          <ul class="flight-list" >
+                            <li>Delhi To Kolkata Flights</li>
+                            <li>Mumbai To Ahmedabad Flights</li>
+                            <li>Delhi To Chandigarh Flights</li>
+                            <li>Delhi To Amritsar Flights</li>
+                            <li>Bangalore To Pune Flights</li>
+  
+                          </ul>
+                          <ul class="flight-list" >
+                            <li>Mumbai To Chennai Flights</li>
+                            <li>Bengaluru To Kochi Flights</li>
+                            <li>Mumbai To Jaipur Flights</li>
+                            <li>Coimbatore To Chennai Flights</li>
+                            <li>Bengaluru To Kolkata Flights</li>
+                        </ul>
+                      </div>
+      
+                      <div id="top-flight-roots-content" class="section-content" style="display: none;">
+                          <h2>Top Flight Roots</h2>
+                          <ul class="top-flight">
+                            <li>Patna To Delhi Flights</li>
+                            <li>Delhi To Lucknow Flights</li>
+                            <li>Hyderabad To Tirupati Flights</li>
+                            <li>Mumbai To Hyderabad Flights</li>
+                            <li>Lucknow To Delhi Flights</li>
+                          </ul>
+                          <ul class="top-flight">
+                            <li>Mumbai To Kolkata Flights</li>
+                            <li>Ahmedabad To Ayodhya Flights</li>
+                            <li>Hyderabad To Vishakhapatnam Flights</li>
+                            <li>Mumbai To Kochi Flights</li>
+                            <li>Ayodhya To Mumbai Flights</li>
+                          </ul>
+                          <ul class="top-flight">
+                            <li>Delhi To Udaipur Flights</li>
+                            <li>Mumbai To Chandigarh Flights</li>
+                            <li>Bangalore To Mangalore Flights</li>
+                            <li>Delhi To Bhubaneswar Flights</li>
+                            <li>Bangalore To Ayodhya Flights</li>
+                          </ul>
+                          <ul class="top-flight">
+                            <li>Chennai To Madurai Flights</li>
+                            <li>Bengaluru To Mysore Flights</li>
+                            <li>Kochi To Bengaluru Flights</li>
+                            <li>Chennai To Madurai Flights</li>
+                            <li>Delhi To Varanasi Flights</li>
+                          </ul>
+
+                      </div>
+      
+                      <div id="trending-flight-roots-content" class="section-content" style="display: none;">
+                          <h2>Trending Flight Roots</h2>
+                          <p>Content for Trending Flight Roots</p>
+                      </div>
+      
+                      <div id="airlines-content" class="section-content" style="display: none;">
+                          <h2>Airlines</h2>
+                          <p>Content for Airlines</p>
+                      </div>
+      
+                      <div id="popular-airline-routes-content" class="section-content" style="display: none;">
+                          <h2>Popular Airline Routes</h2>
+                          <p>Content for Popular Airline Routes</p>
+                      </div>
+      
+                      <div id="info-content" class="section-content" style="display: none;">
+                          <h2>Info</h2>
+                          <p>Content for Info</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          
+      </footer>
+
+
+    <script>
+      // JavaScript to show spinner border when the page is loading
+      document.addEventListener("DOMContentLoaded", function () {
+          var spinner = document.getElementById('spinner');
+          spinner.style.display = 'block';
+
+          window.addEventListener('load', function () {
+              spinner.style.display = 'none';
+          });
+      })
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var offersLink = document.getElementById('offersLink');
+        var offersContainer = document.getElementById('bookingContainer');
+
+        offersLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            offersContainer.style.display = 'block';
+        });
+        
+    });
+  
+      function closeForm() {
+        var offersContainer = document.getElementById('bookingContainer');
+        offersContainer.style.display = 'none';
+      }
+
+      function changeColorAndShowContent(element, contentId) {
+        // Remove active class from all elements
+        document.querySelectorAll('.footer .col').forEach(function (el) {
+            el.classList.remove('active');
+        });
+
+        // Add active class to the clicked element
+        element.classList.add('active');
+
+        // Hide all section contents
+        document.querySelectorAll('.section-content').forEach(function (content) {
+            content.style.display = 'none';
+        });
+
+        // Show the selected section content
+        document.getElementById(contentId).style.display = 'block';
+    }
+      
+
+      
+    
+
+      
+    </script>
+
+
+        
+    </body>
+
+</html>

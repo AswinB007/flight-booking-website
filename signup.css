@@ -1,0 +1,119 @@
+/* Default styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('demo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 400px) {
+    form {
+        padding: 10px;
+    }
+    
+    input[type="button"] {
+        font-size: 14px;
+    }
+    
+    p#error-message {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    input,
+    select {
+        margin-bottom: 10px;
+    }
+    
+    p#error-message {
+        font-size: 10px;
+    }
+}
+
+
+/* Example CSS for making fonts and font sizes responsive */
+
+/* Define base font size for the body */
+body {
+    font-size: 16px; /* Base font size for the body */
+}
+
+/* Use relative units for font sizes */
+h1 {
+    font-size: 2em; /* 2 times the base font size of the body */
+}
+
+p {
+    font-size: 1em; /* Same as the base font size of the body */
+}
+
+/* Use media queries for finer control over font sizes at different screen sizes */
+@media screen and (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust font sizes for even smaller screens */
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+}

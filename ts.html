@@ -1,0 +1,45 @@
+<script>
+    // JavaScript to handle adult count increment
+    document.addEventListener('DOMContentLoaded', function () {
+        var adultCount = 1; // Initial adult count
+
+        // Function to update adult count display
+        function updateAdultCount() {
+            document.getElementById('adultCountInput').value = adultCount;
+        }
+
+        // Event listener for the plus button to increment adult count
+        document.getElementById('plusAdult').addEventListener('click', function () {
+            adultCount++;
+            updateAdultCount();
+        });
+
+        // Event listener for the minus button to decrement adult count
+        document.getElementById('minusAdult').addEventListener('click', function () {
+            if (adultCount > 1) {
+                adultCount--;
+                updateAdultCount();
+            }
+        });
+
+        
+
+    });
+</script>
+
+
+
+<option value="">Choose departure airport</option>
+                              <option value="DEL">Indira Gandhi International Airport (DEL) - New Delhi</option>
+                              <option value="BOM">Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai</option>
+                              <option value="BLR">Kempegowda International Airport (BLR) - Bengaluru</option>
+                              <option value="MAA">Chennai International Airport - Chennai</option>
+                              <option value="CCU">Netaji Subhas Chandra Bose International Airport - Kolkata </option>
+                              <option value="HYD">Rajiv Gandhi International Airport - Hyderabad </option>
+                              <option value="COK">Cochin International Airport - Kochi </option>
+                              <option value="PNQ">Pune Airport - Pune</option>
+                              <option value="GOI">Goa International Airport - Goa</option>
+                              <option value="AMD">Ahmedabad International Airport - Ahmedabad </option>  
+
+                              
+                              <button type="submit" class="btn btn-primary">Search</button>
